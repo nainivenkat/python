@@ -99,14 +99,9 @@ def volumeofsphere():
     print ("The volume of the sphere with radius " + str(r) + " is: " + str(4.0/3.0 * pi* r**3))
 
 def listcomprehensions():
-    list1 = set(["White", "Black", "Red"])
-    list2 = set(["Red", "Green"])
-    list3 =[]
-    for element in list1:
-        if element not in list2:
-            list3.append(element)
-    print list3
-    print list1.difference(list2)
+    list1 = ["White", "Black", "Red"]
+    list2 = ["Red", "Green"]
+    print [element for element in list1 if element not in list2]
 
 def areaoftriange(list):
     area = list[0]*list[1]/2
