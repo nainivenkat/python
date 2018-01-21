@@ -1,5 +1,5 @@
 string = "aabcccccaaa"
-count = 1
+count = 0
 string1 = ""
 for i in range(len(string)):
     count +=1
