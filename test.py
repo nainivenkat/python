@@ -6,6 +6,5 @@ def checkpattern(string):
         print True
 
 
-print "---"
 
 checkpattern("Venkat")
