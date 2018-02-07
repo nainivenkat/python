@@ -5,9 +5,9 @@ Method to identify overlapping circles from the two input circles provided as in
 def overlap(circle1, circle2):
     x1,y1,r1 = circle1
     x2,y2,r2 = circle2
-    width = abs(x1-x2)
+    base = abs(x1-x2)
     height = abs(y1-y2)
-    distance = math.sqrt(width**2 + height**2)
+    distance = math.sqrt(base**2 + height**2)
 
     if distance <= (r1 + r2):
         if r1 < r2:
