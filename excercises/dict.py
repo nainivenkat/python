@@ -1,8 +1,11 @@
-def test1(dict):
+from operator import itemgetter
+
+def test1(dict1):
     
-    print dict.values.sort()
+    sorted_dict = sorted(dict1.items(), key= itemgetter(1))
+    return sorted_dict
 
 
 
 if __name__ == '__main__':
-    test1({0:10, 1:30, 2:50, 3:20})
+    print test1({0:10, 1:30, 2:50, 3:20})
