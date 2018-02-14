@@ -1,14 +1,14 @@
 from contextlib import closing
-from urllib import urlopen
+import requests
 import re
 
 
 
 def get_current_packages():
     package_count_patern = r'<strong>\s*(\d{5,6})\s*</strong>\s*packages'
-    url = 'https://pypi.python.org/pypi'
-    with closing (urllib.urlopen(url)) as u:
-        page = u.read()
+    url = requests.get('https://pypi.python.org/pypi')
+    with closing (url) as u:
+        page = u.text
     return int(re.search(package_count_patern, page).group(1))
 #print re.findall(r'<strong>\s*(\d{5,6})\s*</strong>\s*packages', page)
 
