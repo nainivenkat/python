@@ -1,0 +1,15 @@
+import os
+import time
+import glob
+print os.path.abspath('test.txt') 
+
+#create and modified time of the file
+
+print time.ctime(os.path.getmtime("test.txt")) # modified time
+print time.ctime(os.path.getctime("test.txt")) # create time
+
+
+#sort files by date
+files = glob.glob("*.txt")
+files.sort(key=os.path.getmtime)
+print("\n".join(files))
