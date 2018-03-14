@@ -1,0 +1,12 @@
+H --> Help
+Q --> Quit
+P --> print
+Pp --> prettyprint
+W --> Where(+stack trace)
+L --> print the surrounding source
+A --> Args for current function or display the value
+data --> display the value
+N --> next line of the code
+C --> continue till next break point
+S --> step inside a function
+B --> breakpoint (b <line number>)
