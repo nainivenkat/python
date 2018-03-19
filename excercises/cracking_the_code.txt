@@ -6,3 +6,29 @@ Ex:
  find permutations of s = "abbc" in b ="cbabadcbbabbcbabaabccbabc"
  ===========================================
  
+Array --> o(n)
+Link list --> o(n) for accessing list,insert and delete, 
+Trees:
+==================
+Binary Trees:
+1. Three nodes --> Root, left, Right
+Properties:
+a. left nodes are always less than root node
+b. Binary Search tree
+      a. A binary search tree is a binary tree which ful fills specifc binary property
+      b. On any subtree, the left nodes are less than the root node which is less than all of the right nodes
+Tree traversal
+==================
+BFS:
+====
+Level Order(Queues): --> time complexity (o(n)), space complexity (o(1) best and o(n) -worst/avg for perfect binary tree)
+Level order is a Breadth First Search (BFS). Visit all nodes in one level first and then go on to next level
+
+
+DFS:
+===
+Pre-Order:  Root->left->right
+In-order: left->root-->node (This gives the sequence of the number)
+post-order: Left->Right->Node
+
+
