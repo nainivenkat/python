@@ -1,0 +1,22 @@
+def perm(list1):
+    if len(list1) == 0:
+        return []
+    if len(list1) == 1:
+        return [list1]
+
+    l = []
+
+    for i in range(len(list1)):
+        m = list1[i]
+        remlist = list1[:i]+list1[i+1:]
+        for p in perm(remlist):
+            l.append([m]+p)
+
+    return l
+
+
+
+list1 = ['1','2','3']
+list2 =  perm(list1)
+for element in list2:
+    print element
