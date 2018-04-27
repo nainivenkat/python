@@ -1,0 +1,12 @@
+def reverseint(num):
+    value = abs(num)
+    length = len(str(value))
+    res = 0
+    for i in range(length):
+        res = res *10 + value %10
+        value = value //10
+    if num <0:
+        return -res
+    return res
+
+print reverseint(123)
